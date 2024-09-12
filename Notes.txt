@@ -1,0 +1,14 @@
+About:
+ {readFilesync,writeFileSync}=require('fs');
+
+This line of code uses destructuring assignment to import two specific functions, readFileSync and writeFileSync, from the fs (file system) module in Node.js.
+
+readFileSync: Reads the contents of a file synchronously (blocking). It returns the file data.
+writeFileSync: Writes data to a file synchronously (blocking). It creates the file if it doesn’t exist or overwrites it if it does.
+Here's what's happening:
+
+require('fs'): Imports the built-in Node.js fs module, which provides file system functionalities.
+{ readFileSync, writeFileSync }: Destructures the fs object to extract these two specific methods instead of importing the whole module.
+This syntax allows you to use readFileSync and writeFileSync directly, without needing to reference fs.readFileSync or fs.writeFileSync each time.
+
+asynchronous processing can provide higher performance and better efficiency, especially in environments
